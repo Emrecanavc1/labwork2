@@ -14,6 +14,8 @@
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+           
+            
         }
         .container {
             text-align: center;
@@ -58,7 +60,7 @@
     <script>
         async function getWeather() {
             const city = document.getElementById('city').value;
-            const apiKey = 'ca542bc3708f1647f133ff89a9f2f745';
+            const apiKey = 'ca542bc3708f1647f133f2223412f745';
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
             const data = await response.json();
             
